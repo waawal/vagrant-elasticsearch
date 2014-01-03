@@ -19,3 +19,6 @@
   copy: src=elasticsearch.yml dest=/etc/elasticsearch/elasticsearch.yml
   notify:
     - restart elasticsearch
+
+- name: Install head (Plugin)
+  command: /usr/share/elasticsearch/bin/plugin -install mobz/elasticsearch-head creates=/usr/share/elasticsearch/plugins/head/_site/.gitignore
