@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
 
   config.vm.provision :ansible do |ansible|
-    ansible.playbook = "elasticsearch.yml"
+    ansible.playbook = "playbook.yml"
     ansible.extra_vars = { user: "vagrant"}
   end
 
