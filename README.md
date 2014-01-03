@@ -1,15 +1,43 @@
 # Elasticsearch on Vagrant
-Precise64 (Ubuntu 12.04 LTS)
+precise64 (Ubuntu 12.04 LTS)
+
+This is a Vagrant machine provisioned with Ansible.
+It is made for development rather than deployment, a couple of very useful plugins
+has been included to aid you in your development.
 
 ## Instructions
 
-* Install Vagrant
-* Install Ansible
+* Install [Vagrant](http://www.vagrantup.com/)
+* Install [Ansible](http://docs.ansible.com/intro_installation.html)
 * Clone this repo
-* Run `vagrant up` from inside this directory
+* Run `vagrant up` from inside the repository directory
 
 You should now have a `elasticsearch` server up and running and reachable 
-from your host machine on *http://localhost:9200*
+from your host machine on
+
+    http://localhost:9200
+
+## Plugins
+
+### Inquisitor
+[polyfractal/elasticsearch-inquisitor](https://github.com/polyfractal/elasticsearch-inquisitor)
+
+[http://localhost:9200/_plugin/inquisitor/](http://localhost:9200/_plugin/inquisitor/)
+
+### Paramedic
+[karmi/elasticsearch-paramedic](https://github.com/karmi/elasticsearch-paramedic)
+
+[http://localhost:9200/_plugin/paramedic/index.html](http://localhost:9200/_plugin/paramedic/index.html)
+
+### Bigdesk
+[lukas-vlcek/bigdesk](https://github.com/lukas-vlcek/bigdesk)
+
+[http://localhost:9200/_plugin/bigdesk/](http://localhost:9200/_plugin/bigdesk/)
+
+### Head
+[mobz/elasticsearch-head](https://github.com/mobz/elasticsearch-head)
+
+[http://localhost:9200/_plugin/head/](http://localhost:9200/_plugin/head/)
 
 ## License
 
@@ -56,11 +84,25 @@ MIT
     TASK: [elasticsearch | Ensure elasticsearch config is in place] ***************
     changed: [default]
 
+    TASK: [elasticsearch | Install head] ******************************************
+    changed: [default]
+
+    TASK: [elasticsearch | Install Paramedic] *************************************
+    changed: [default]
+
+    TASK: [elasticsearch | Install Bigdesk] ***************************************
+    changed: [default]
+
+    TASK: [elasticsearch | Install Inquisitor] ************************************
+    changed: [default]
+
     NOTIFIED: [elasticsearch | restart elasticsearch] *****************************
     changed: [default]
 
     PLAY RECAP ********************************************************************
-    default                    : ok=7    changed=6    unreachable=0    failed=0
+    default                    : ok=11   changed=10   unreachable=0    failed=0
 
+
+---
 
 <img src="http://developer.rackspace.com/images/2013-11-04-welcome-to-performance-cloud-servers/simba.gif" width="100%" />
