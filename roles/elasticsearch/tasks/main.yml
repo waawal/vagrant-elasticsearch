@@ -1,0 +1,21 @@
+---
+
+- name: Ensure python-pycurl is installed
+  apt: pkg=python-pycurl state=installed
+
+- name: Ensure Elasticsearch apt signing key is installed
+  apt_key: url=http://packages.elasticsearch.org/GPG-KEY-elasticsearch state=present
+
+- name: Ensure Elasticsearch 0.90.x repository is installed
+  apt_repository: repo="deb http://packages.elasticsearch.org/elasticsearch/0.90/debian stable main" state=present update_cache=yes
+
+- name: Ensure elasticsearch is installed
+  apt: pkg={{item}} state=installed
+  with_items:
+    - openjdk-7-jre
+    - elasticsearch
+
+- name: Ensure elasticsearch config is in place
+  copy: src=elasticsearch.yml dest=/etc/elasticsearch/elasticsearch.yml
+  notify:
+    - restart elasticsearch
