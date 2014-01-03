@@ -12,7 +12,7 @@
 - name: Ensure elasticsearch is installed
   apt: pkg={{item}} state=installed
   with_items:
-    - openjdk-7-jre
+    - openjdk-7-jre-headless
     - elasticsearch
 
 - name: Ensure elasticsearch config is in place
