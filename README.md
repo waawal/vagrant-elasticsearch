@@ -31,15 +31,6 @@ MIT
     [default] Booting VM...
     [default] Waiting for machine to boot. This may take a few minutes...
     [default] Machine booted and ready!
-    [default] The guest additions on this VM do not match the installed version of
-    VirtualBox! In most cases this is fine, but in rare cases it can
-    cause things such as shared folders to not work properly. If you see
-    shared folder errors, please make sure the guest additions within the
-    virtual machine match the version of VirtualBox you have installed on
-    your host and reload your VM.
-
-    Guest Additions Version: 4.2.0
-    VirtualBox Version: 4.3
     [default] Setting hostname...
     [default] Mounting shared folders...
     [default] -- /vagrant
