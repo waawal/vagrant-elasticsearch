@@ -28,3 +28,6 @@
 
 - name: Install Bigdesk (Plugin)
   command: /usr/share/elasticsearch/bin/plugin -install lukas-vlcek/bigdesk creates=/usr/share/elasticsearch/plugins/bigdesk/_site/.gitignore
+
+- name: Install Inquisitor (Plugin)
+  command: /usr/share/elasticsearch/bin/plugin -install polyfractal/elasticsearch-inquisitor creates=/usr/share/elasticsearch/plugins/inquisitor/.gitignore
