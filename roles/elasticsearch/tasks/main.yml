@@ -22,3 +22,6 @@
 
 - name: Install head (Plugin)
   command: /usr/share/elasticsearch/bin/plugin -install mobz/elasticsearch-head creates=/usr/share/elasticsearch/plugins/head/_site/.gitignore
+
+- name: Install Paramedic (Plugin)
+  command: /usr/share/elasticsearch/bin/plugin -install karmi/elasticsearch-paramedic creates=/usr/share/elasticsearch/plugins/paramedic/_site/.gitignore
