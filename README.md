@@ -1,15 +1,21 @@
 # Elasticsearch on Vagrant
-Precise64 (Ubuntu 12.04 LTS)
+precise64 (Ubuntu 12.04 LTS)
+
+This is a Vagrant machine provisioned with Ansible.
+It is made for development rather than deployment, a couple of very useful plugins
+has been included to aid you in your development.
 
 ## Instructions
 
-* Install Vagrant
-* Install Ansible
+* Install [Vagrant](http://www.vagrantup.com/)
+* Install [Ansible](http://docs.ansible.com/intro_installation.html)
 * Clone this repo
-* Run `vagrant up` from inside this directory
+* Run `vagrant up` from inside the repository directory
 
 You should now have a `elasticsearch` server up and running and reachable 
-from your host machine on *http://localhost:9200*
+from your host machine on
+
+    http://localhost:9200
 
 ## Plugins
 
