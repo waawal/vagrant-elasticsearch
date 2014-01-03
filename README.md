@@ -84,11 +84,24 @@ MIT
     TASK: [elasticsearch | Ensure elasticsearch config is in place] ***************
     changed: [default]
 
+    TASK: [elasticsearch | Install head] ******************************************
+    changed: [default]
+
+    TASK: [elasticsearch | Install Paramedic] *************************************
+    changed: [default]
+
+    TASK: [elasticsearch | Install Bigdesk] ***************************************
+    changed: [default]
+
+    TASK: [elasticsearch | Install Inquisitor] ************************************
+    changed: [default]
+
     NOTIFIED: [elasticsearch | restart elasticsearch] *****************************
     changed: [default]
 
     PLAY RECAP ********************************************************************
-    default                    : ok=7    changed=6    unreachable=0    failed=0
+    default                    : ok=11   changed=10   unreachable=0    failed=0
+
 
 ---
 
