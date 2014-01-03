@@ -25,3 +25,6 @@
 
 - name: Install Paramedic (Plugin)
   command: /usr/share/elasticsearch/bin/plugin -install karmi/elasticsearch-paramedic creates=/usr/share/elasticsearch/plugins/paramedic/_site/.gitignore
+
+- name: Install Bigdesk (Plugin)
+  command: /usr/share/elasticsearch/bin/plugin -install lukas-vlcek/bigdesk creates=/usr/share/elasticsearch/plugins/bigdesk/_site/.gitignore
