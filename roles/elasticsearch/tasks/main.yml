@@ -20,14 +20,14 @@
   notify:
     - restart elasticsearch
 
-- name: Install head (Plugin)
+- name: Ensure head (Plugin) is installed
   command: /usr/share/elasticsearch/bin/plugin -install mobz/elasticsearch-head creates=/usr/share/elasticsearch/plugins/head/_site/.gitignore
 
-- name: Install Paramedic (Plugin)
+- name: Ensure Paramedic (Plugin) is installed
   command: /usr/share/elasticsearch/bin/plugin -install karmi/elasticsearch-paramedic creates=/usr/share/elasticsearch/plugins/paramedic/_site/.gitignore
 
-- name: Install Bigdesk (Plugin)
+- name: Ensure Bigdesk (Plugin) is installed
   command: /usr/share/elasticsearch/bin/plugin -install lukas-vlcek/bigdesk creates=/usr/share/elasticsearch/plugins/bigdesk/_site/.gitignore
 
-- name: Install Inquisitor (Plugin)
+- name: Ensure Inquisitor (Plugin) is installed
   command: /usr/share/elasticsearch/bin/plugin -install polyfractal/elasticsearch-inquisitor creates=/usr/share/elasticsearch/plugins/inquisitor/.gitignore

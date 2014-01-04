@@ -84,16 +84,16 @@ MIT
     TASK: [elasticsearch | Ensure elasticsearch config is in place] ***************
     changed: [default]
 
-    TASK: [elasticsearch | Install head] ******************************************
+    TASK: [elasticsearch | Ensure head (Plugin) is installed] *********************
     changed: [default]
 
-    TASK: [elasticsearch | Install Paramedic] *************************************
+    TASK: [elasticsearch | Ensure Paramedic (Plugin) is installed] ****************
     changed: [default]
 
-    TASK: [elasticsearch | Install Bigdesk] ***************************************
+    TASK: [elasticsearch | Ensure Bigdesk (Plugin) is installed] ******************
     changed: [default]
 
-    TASK: [elasticsearch | Install Inquisitor] ************************************
+    TASK: [elasticsearch | Ensure Inquisitor (Plugin) is installed] ***************
     changed: [default]
 
     NOTIFIED: [elasticsearch | restart elasticsearch] *****************************
