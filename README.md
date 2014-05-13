@@ -81,7 +81,7 @@ MIT
     TASK: [elasticsearch | Ensure Elasticsearch apt signing key is installed] *****
     changed: [default]
 
-    TASK: [elasticsearch | Ensure Elasticsearch 1.x repository is installed] ***
+    TASK: [elasticsearch | Ensure Elasticsearch 1.1.x repository is installed] *
     changed: [default]
 
     TASK: [elasticsearch | Ensure elasticsearch is installed] *********************
