@@ -39,6 +39,12 @@ from your host machine on
 
 [http://localhost:9200/_plugin/head/](http://localhost:9200/_plugin/head/)
 
+---
+
+You can install your own plugins with the standard elasticsearch plugin executable:
+
+    $ sudo /usr/share/elasticsearch/bin/plugin -install elasticsearch/elasticsearch-analysis-icu/2.0.0
+
 ## License
 
 MIT
@@ -75,7 +81,7 @@ MIT
     TASK: [elasticsearch | Ensure Elasticsearch apt signing key is installed] *****
     changed: [default]
 
-    TASK: [elasticsearch | Ensure Elasticsearch 0.90.x repository is installed] ***
+    TASK: [elasticsearch | Ensure Elasticsearch 1.1.x repository is installed] *
     changed: [default]
 
     TASK: [elasticsearch | Ensure elasticsearch is installed] *********************
