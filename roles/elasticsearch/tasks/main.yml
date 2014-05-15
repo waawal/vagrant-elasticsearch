@@ -20,6 +20,9 @@
   notify:
     - restart elasticsearch
 
+- name: Ensure elasticsearch service is enabled
+  service: name=elasticsearch enabled=yes
+
 - name: Ensure head (Plugin) is installed
   command: /usr/share/elasticsearch/bin/plugin -install mobz/elasticsearch-head creates=/usr/share/elasticsearch/plugins/head/_site/.gitignore
 
