@@ -43,7 +43,7 @@ from your host machine on
 
 You can install your own plugins with the standard elasticsearch plugin executable:
 
-    $ sudo /usr/share/elasticsearch/bin/plugin -install elasticsearch/elasticsearch-analysis-icu/2.0.0
+    $ sudo /usr/share/elasticsearch/bin/plugin -install elasticsearch/elasticsearch-analysis-icu/2.1.0
 
 ## License
 
@@ -81,7 +81,7 @@ MIT
     TASK: [elasticsearch | Ensure Elasticsearch apt signing key is installed] *****
     changed: [default]
 
-    TASK: [elasticsearch | Ensure Elasticsearch 1.1.x repository is installed] *
+    TASK: [elasticsearch | Ensure Elasticsearch 1.1.x repository is installed] ***
     changed: [default]
 
     TASK: [elasticsearch | Ensure elasticsearch is installed] *********************
