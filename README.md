@@ -17,7 +17,7 @@ from your host machine on
 
     http://localhost:9200
 
-## Plugins
+## Included Plugins
 
 ### Inquisitor
 [polyfractal/elasticsearch-inquisitor](https://github.com/polyfractal/elasticsearch-inquisitor)
