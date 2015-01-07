@@ -6,8 +6,8 @@
 - name: Ensure Elasticsearch apt signing key is installed
   apt_key: url=http://packages.elasticsearch.org/GPG-KEY-elasticsearch state=present
 
-- name: Ensure Elasticsearch 1.1.x repository is installed
-  apt_repository: repo="deb http://packages.elasticsearch.org/elasticsearch/1.1/debian stable main" state=present update_cache=yes
+- name: Ensure Elasticsearch 1.4 repository is installed
+  apt_repository: repo="deb http://packages.elasticsearch.org/elasticsearch/1.4/debian stable main" state=present update_cache=yes
 
 - name: Ensure elasticsearch is installed
   apt: pkg={{item}} state=latest
